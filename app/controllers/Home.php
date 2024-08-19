@@ -2,7 +2,7 @@
 class Home {
     public function index() {
        
-        $viewPath = '../app/views/home/index.html';
+        $viewPath = '../app/views/home/index.php';
         if (file_exists($viewPath)) {
             require_once $viewPath;
         } else {
