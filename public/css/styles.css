@@ -10,6 +10,7 @@ body {
     height: 100vh;
 }
 
+/* Estilos da página de login*/
 .container {
     width: 100%;
     max-width: 400px;
@@ -172,4 +173,76 @@ button:hover {
 
 .professional-login strong {
     font-weight: bold; 
+}
+
+/* Estilos da página inicial */
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: transparent;
+}
+
+.header .icon {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.header .logo {
+    width: 120px;
+    margin-top: 10px;
+}
+
+.header .messages-icon {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+/* Estilos para a seção de opções */
+.options-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 90px;
+    row-gap: 20px; /* Menor espaço entre as linhas de opções */
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: 80px; /* Ajuste para dar espaço ao header fixo */
+}
+
+.option {
+    background-color: rgba(255, 255, 255, 0.7); 
+    border-radius: 8px; 
+    display: flex;
+    flex-direction: column; /* Alinha a imagem e o texto verticalmente */
+    align-items: center;
+    justify-content: center;
+    font-size: 1em; 
+    color: #6582fd; 
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    padding: 10px;
+    text-align: center;
+    width: 120px; /* Ajuste o tamanho conforme necessário */
+    height: 120px; /* Ajuste o tamanho conforme necessário */
+}
+
+.option img.option-icon {
+    width: 40px; /* Ajuste o tamanho das imagens conforme necessário */
+    height: 40px;
+    margin-bottom: 10px; /* Espaço entre a imagem e o texto */
+}
+
+.option:hover {
+    background-color: rgba(255, 255, 255, 0.9); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
