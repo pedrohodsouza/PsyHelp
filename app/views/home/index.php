@@ -13,7 +13,6 @@
         <img src="images/chat.png" alt="Mensagens" class="icon">
     </div>
 
-    <!-- Novo contêiner para agrupar as seções -->
     <div class="content-wrapper">
         <div class="options-container">
             <div class="option">
@@ -34,14 +33,12 @@
             </div>
         </div>
 
-        <!-- procedures-section fica abaixo da options-container -->
         <div class="procedures-section">
             <img src="images/procedimentos.png" alt="Procedimentos" class="procedures-icon">
             <span class="procedures-text">Cadastro de Procedimentos e atendimento a Saúde Mental</span>
         </div>
     </div>
 
-    <!-- Footer -->
     <div class="footer">
         <div class="footer-option">
             <img src="images/explorar.png" alt="Explorar" class="footer-icon">
@@ -59,7 +56,7 @@
 </body>
 </html>
 <style>
-/* Estilos do footer */
+
 .footer {
     width: 100%;
     display: flex;
@@ -93,13 +90,12 @@
     color: #6582fd;
 }
 
-/* Ajustes de margem para os ícones do footer */
 .footer .footer-option:nth-child(2) {
-    margin-left: -10px; /* Ajusta a posição do ícone do meio */
+    margin-left: -10px; 
 }
 
 .footer .footer-option:nth-child(3) {
-    margin-right: 30px; /* Ajusta a posição do ícone da direita */
+    margin-right: 30px; 
 }
     
 </style>
