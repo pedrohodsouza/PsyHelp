@@ -5,7 +5,7 @@ body {
     font-family: Arial, sans-serif;
     background: linear-gradient(180deg, #6582fd, #4a63d1); 
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
     height: 100vh;
 }
@@ -16,6 +16,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-grow: 1;
 }
 
 /* Estilos da página inicial */
@@ -114,3 +115,5 @@ body {
     color: #ffffff; 
     font-size: 1em; 
 }
+
+    

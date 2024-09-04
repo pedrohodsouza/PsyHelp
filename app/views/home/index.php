@@ -41,5 +41,65 @@
         </div>
     </div>
 
+    <!-- Footer -->
+    <div class="footer">
+        <div class="footer-option">
+            <img src="images/explorar.png" alt="Explorar" class="footer-icon">
+            <span>Explorar</span>
+        </div>
+        <div class="footer-option">
+            <img src="images/mapa.png" alt="Mapa" class="footer-icon">
+            <span>Mapa</span>
+        </div>
+        <div class="footer-option">
+            <img src="images/usuario.png" alt="Usuário" class="footer-icon">
+            <span>Usuário</span>
+        </div>
+    </div>
 </body>
 </html>
+<style>
+/* Estilos do footer */
+.footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.7); 
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.footer-option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.footer-option img.footer-icon {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 5px;
+}
+
+.footer-option span {
+    font-size: 0.8em;
+    color: #6582fd;
+}
+
+/* Ajustes de margem para os ícones do footer */
+.footer .footer-option:nth-child(2) {
+    margin-left: -10px; /* Ajusta a posição do ícone do meio */
+}
+
+.footer .footer-option:nth-child(3) {
+    margin-right: 30px; /* Ajusta a posição do ícone da direita */
+}
+    
+</style>
