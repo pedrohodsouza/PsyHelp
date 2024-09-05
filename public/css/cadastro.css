@@ -1,0 +1,117 @@
+/* Estilo geral da página */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(180deg, #6582fd, #4a63d1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    max-width: 600px;
+    padding-top: 20px;
+}
+
+/* Estilo do logotipo */
+.header .logo {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+/* Estilo do contêiner translúcido */
+.cadastro-container {
+    background-color: rgba(52, 52, 99, 0.7); /* Fundo translúcido */
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Estilo dos campos do formulário */
+.cadastro-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Duas colunas com espaçamento flexível */
+    gap: 20px; /* Espaçamento maior entre os inputs */
+}
+
+.cadastro-form .input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.cadastro-form label {
+    font-size: 0.9em;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.cadastro-form input, 
+.cadastro-form select {
+    width: 90%; /* Ajuste para inputs menores */
+    padding: 6px; /* Redução do padding para inputs menores */
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.9);
+    font-size: 0.9em;
+    color: #333;
+}
+
+/* Ajustes para o campo Nome Completo (que deve ocupar toda a largura) */
+.cadastro-form #nome {
+    grid-column: span 2; /* Ocupa as duas colunas */
+    width: 95%; /* Ajuste para ficar alinhado */
+}
+
+/* Botões de ação */
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    grid-column: span 2; /* Botões ocupam as duas colunas */
+}
+
+.button-group .btn {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 23%; /* Ajuste da largura dos botões */
+}
+
+.button-group .novo-cadastro {
+    background-color: #C0C0C0;
+    color: #6582fd;
+}
+
+.button-group .alterar {
+    background-color: #C0C0C0;
+    color: #6582fd;
+}
+
+.button-group .confirmar {
+    background-color: #4CAF50; /* Verde para confirmar */
+    color: #fff;
+}
+
+.button-group .deletar {
+    background-color: #f44336; /* Vermelho para deletar */
+    color: #fff;
+}
+
+.button-group .btn:hover {
+    opacity: 0.9;
+}
