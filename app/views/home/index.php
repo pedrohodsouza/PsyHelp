@@ -57,6 +57,18 @@
 </html>
 <style>
 
+.options-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px; 
+    padding: 20px;
+    padding-top: 100px;
+    box-sizing: border-box;
+    width: 100%; 
+    max-width: 400px; 
+    justify-items: center; 
+}
+    
 .footer {
     width: 100%;
     display: flex;
